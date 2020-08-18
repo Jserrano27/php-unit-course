@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b8d8826-43df-4677-8fc4-ec5e5d8d1279" name="Default Changelist" comment="">
+      <change beforePath="$USER_HOME$/whmcs_br/public_html/templates/orderforms-hgbr/universal_slider/js/ion.rangeSlider.js" beforeDir="false" afterPath="$USER_HOME$/whmcs_br/public_html/templates/orderforms-hgbr/universal_slider/js/ion.rangeSlider.js" afterDir="false" />
+      <change beforePath="$USER_HOME$/whmcs_br/public_html/templates/orderforms/universal_slider/js/ion.rangeSlider.js" beforeDir="false" afterPath="$USER_HOME$/whmcs_br/public_html/templates/orderforms/universal_slider/js/ion.rangeSlider.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/parte2/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/whmcs_br" />
+  </component>
+  <component name="ProjectId" id="1gHpZLtkRMoMCOTMc7yt7JfgqFg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b8d8826-43df-4677-8fc4-ec5e5d8d1279" name="Default Changelist" comment="" />
+      <created>1597781426111</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597781426111</updated>
+      <workItem from="1597781427131" duration="1101000" />
+      <workItem from="1597787585175" duration="9000" />
+      <workItem from="1597787608849" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2018" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597781658629">
+      <screen x="1600" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2018" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/55.140.1545.873/1600.0.1920.1080@1600.0.1920.1080" timestamp="1597781658629" />
+    <state x="2343" y="297" width="424" height="484" key="FileChooserDialogImpl" timestamp="1597787620124">
+      <screen x="1600" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2343" y="297" width="424" height="484" key="FileChooserDialogImpl/55.140.1545.873/1600.0.1920.1080@1600.0.1920.1080" timestamp="1597787620124" />
+    <state x="2251" y="278" width="879" height="522" key="find.popup" timestamp="1597782480498">
+      <screen x="1600" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2251" y="278" width="879" height="522" key="find.popup/55.140.1545.873/1600.0.1920.1080@1600.0.1920.1080" timestamp="1597782480498" />
+  </component>
+</project>
