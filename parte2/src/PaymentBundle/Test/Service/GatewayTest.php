@@ -103,10 +103,21 @@ class GatewayTest extends TestCase
         $this->assertEquals(false, $paid);
     }
 
+    // Usando ordem das chamadas do mock para definir os retornos
     public function testShouldPayWhenGatewayAndAuthenticationSucceed()
     {
         $httpClient = $this->createMock(HttpClientInterface::class);
         $logger = $this->createMock(LoggerInterface::class);
+
+        $httpClient
+            ->expects($this->at(0))
+            ->method('send')
+            ->willReturn('my-token');
+
+        $httpClient
+            ->expects($this->at(1))
+            ->method('send')
+            ->willReturn(['paid' => true]);
 
         $user = 'test';
         $password = 'valid-password';
@@ -114,34 +125,6 @@ class GatewayTest extends TestCase
         $creditCardNumber = 2222444466668888;
         $validity = new \DateTime('now');
         $value = 50;
-        $map = [
-            [
-                'POST',
-                Gateway::BASE_URL . '/authenticate',
-                [
-                    'user' => $user,
-                    'password' => $password
-                ],
-                'my-token'
-            ],
-            [
-                'POST',
-                Gateway::BASE_URL . '/pay',
-                [
-                    'name' => $name,
-                    'credit_card_number' => $creditCardNumber,
-                    'validity' => $validity,
-                    'value' => $value,
-                    'token' => 'my-token'
-                ],
-                ['paid' => true]
-            ]
-        ];
-
-        $httpClient
-            ->expects($this->atLeast(2))
-            ->method('send')
-            ->will($this->returnValueMap($map));
 
         $gateway = new Gateway($httpClient, $logger, $user, $password);
 
