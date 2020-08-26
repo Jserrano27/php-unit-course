@@ -4,18 +4,17 @@ namespace FidelityProgramBundle\Service;
 
 use FidelityProgramBundle\Entity\Points;
 use FidelityProgramBundle\Repository\PointsRepository;
-use MyFramework\LoggerInterface;
 use OrderBundle\Entity\Customer;
 
 class FidelityProgramService
 {
     private $pointsRepository;
     private $pointsCalculator;
-    private $logger;
 
     public function __construct(
         PointsRepository $pointsRepository,
         PointsCalculator $pointsCalculator
+
     )
     {
         $this->pointsRepository = $pointsRepository;

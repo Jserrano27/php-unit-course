@@ -47,7 +47,7 @@ class FidelityProgramServiceTest extends TestCase {
 
     $fidelityProgramService = new FidelityProgramService($pointsRepository, $pointsCalculator);
 
-    $customer = new Customer();
+    $customer = $this->createMock(Customer::class);
     $value = 12;
 
     $fidelityProgramService->addPoints($customer, $value);

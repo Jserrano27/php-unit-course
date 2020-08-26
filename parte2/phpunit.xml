@@ -10,10 +10,4 @@
             </exclude>
         </whitelist>
     </filter>-->
-
-    <testsuites>
-        <testsuite name="PHP Unit Testing Course">
-            <directory>./src</directory>
-        </testsuite>
-    </testsuites>
 </phpunit>
