@@ -12,32 +12,57 @@ use PaymentBundle\Service\PaymentService;
 use PHPUnit\Framework\TestCase;
 
 class PaymentServiceTest extends TestCase {
+
+    /**
+     * o PHPUnit instancia uma clase (PaymentServiceTest) por cada teste
+     * desse jeito nao se compartilha estado entre testes, nenhum teste depende do outro
+     */
+    private $gateway;
+    private $paymentTransactionRepository;
+    private $paymentService;
+    private $customer;
+    private $item;
+    private $creditCard;
+
+    /**
+     * setUp e chamado antes da execuçao de CADA teste
+     */
+    public function setUp()
+    {
+        $this->gateway = $this->createMock(Gateway::class);
+        $this->paymentTransactionRepository = $this->createMock(PaymentTransactionRepository::class);
+        $this->paymentService = new PaymentService($this->gateway, $this->paymentTransactionRepository);
+
+        $this->customer = $this->createMock(Customer::class);
+        $this->item = $this->createMock(Item::class);
+        $this->creditCard = $this->createMock(CreditCard::class);
+    }
+
+    /**
+     * setUpBeforeClass é chamado só uma vez antes do inicio dos testes da clase
+     */
+    public static function setUpBeforeClass()
+    {
+        // Abre conexao com DB;
+    }
+
     /**
      * @test
      */
     public function shouldSaveWhenGatewayReturnOkWithRetries()
     {
-        $gateway = $this->createMock(Gateway::class);
-        $paymentTransactionRepository = $this->createMock(PaymentTransactionRepository::class);
-
-        $gateway
+        $this->gateway
             ->expects($this->atLeast(3))
             ->method('pay')
             ->will($this->onConsecutiveCalls(
                 false, false, true
             ));
 
-        $paymentTransactionRepository
+        $this->paymentTransactionRepository
             ->expects($this->once())
             ->method('save');
 
-        $paymentService = new PaymentService($gateway, $paymentTransactionRepository);
-
-        $customer = $this->createMock(Customer::class);
-        $item = $this->createMock(Item::class);
-        $creditCard = $this->createMock(CreditCard::class);
-
-        $paymentService->pay($customer, $item, $creditCard);
+        $this->paymentService->pay($this->customer, $this->item, $this->creditCard);
     }
 
     /**
@@ -45,28 +70,35 @@ class PaymentServiceTest extends TestCase {
      */
     public function shouldThrowExceptionWhenGatewayFails()
     {
-        $gateway = $this->createMock(Gateway::class);
-        $paymentTransactionRepository = $this->createMock(PaymentTransactionRepository::class);
-
-        $gateway
+        $this->gateway
             ->expects($this->atLeast(3))
             ->method('pay')
             ->will($this->onConsecutiveCalls(
                 false, false, false
             ));
 
-        $paymentTransactionRepository
+        $this->paymentTransactionRepository
             ->expects($this->never())
             ->method('save');
 
         $this->expectException(PaymentErrorException::class);
 
-        $paymentService = new PaymentService($gateway, $paymentTransactionRepository);
+        $this->paymentService->pay($this->customer, $this->item, $this->creditCard);
+    }
 
-        $customer = $this->createMock(Customer::class);
-        $item = $this->createMock(Item::class);
-        $creditCard = $this->createMock(CreditCard::class);
+    /**
+     * Chamado no final do teste, utilizado mais com testes de integraçao (ex. fechar conexao com DB)
+     * Pode ser utilizado para liberar a memoria das variaveis dos mocks
+     */
+    public function tearDown()
+    {
+        unset($this->gateway);
+        unset($this->paymentTransactionRepository);
+        unset($this->paymentService);
+        unset($this->customer);
+        unset($this->item);
+        unset($this->creditCard);
 
-        $paymentService->pay($customer, $item, $creditCard);
+        // Fecha conexao com DB;
     }
 }
