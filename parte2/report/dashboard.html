@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/local/LATAM-EIG/jserrano/code/php-unit-course/parte2/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href=".css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/style.css" rel="stylesheet" type="text/css">
+  <link href=".css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/home/local/LATAM-EIG/jserrano/code/php-unit-course/parte2/src</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="FidelityProgramBundle/Repository/PointsRepository.php.html#7">FidelityProgramBundle\Repository\PointsRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Controller/OrderController.php.html#25">OrderBundle\Controller\OrderController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/CreditCard.php.html#5">OrderBundle\Entity\CreditCard</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Item.php.html#5">OrderBundle\Entity\Item</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Restaurant.php.html#5">OrderBundle\Entity\Restaurant</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Repository/BadWordsRepository.php.html#8">OrderBundle\Repository\BadWordsRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Repository/CustomerRepository.php.html#9">OrderBundle\Repository\CustomerRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Repository/ItemRepository.php.html#8">OrderBundle\Repository\ItemRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Repository/OrderRepository.php.html#8">OrderBundle\Repository\OrderRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/CustomerCategoryService.php.html#7">OrderBundle\Service\CustomerCategoryService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/HeavyUserCategory.php.html#7">OrderBundle\Service\HeavyUserCategory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/LightUserCategory.php.html#7">OrderBundle\Service\LightUserCategory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/MediumUserCategory.php.html#7">OrderBundle\Service\MediumUserCategory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/NewUserCategory.php.html#7">OrderBundle\Service\NewUserCategory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PaymentBundle/Repository/PaymentTransactionRepository.php.html#11">PaymentBundle\Repository\PaymentTransactionRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Customer.php.html#5">OrderBundle\Entity\Customer</a></td><td class="text-right">33%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="OrderBundle/Controller/OrderController.php.html#25">OrderBundle\Controller\OrderController</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Customer.php.html#5">OrderBundle\Entity\Customer</a></td><td class="text-right">54</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Item.php.html#5">OrderBundle\Entity\Item</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="OrderBundle/Service/CustomerCategoryService.php.html#7">OrderBundle\Service\CustomerCategoryService</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="OrderBundle/Service/HeavyUserCategory.php.html#7">OrderBundle\Service\HeavyUserCategory</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="OrderBundle/Service/MediumUserCategory.php.html#7">OrderBundle\Service\MediumUserCategory</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="OrderBundle/Service/LightUserCategory.php.html#7">OrderBundle\Service\LightUserCategory</a></td><td class="text-right">12</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="FidelityProgramBundle/Repository/PointsRepository.php.html#9"><abbr title="FidelityProgramBundle\Repository\PointsRepository::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/CustomerCategoryService.php.html#21"><abbr title="OrderBundle\Service\CustomerCategoryService::getUsageCategory">getUsageCategory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Restaurant.php.html#16"><abbr title="OrderBundle\Entity\Restaurant::getName">getName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Restaurant.php.html#21"><abbr title="OrderBundle\Entity\Restaurant::isOpen">isOpen</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Repository/BadWordsRepository.php.html#10"><abbr title="OrderBundle\Repository\BadWordsRepository::findAllAsArray">findAllAsArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Repository/CustomerRepository.php.html#15"><abbr title="OrderBundle\Repository\CustomerRepository::findByID">findByID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Repository/ItemRepository.php.html#14"><abbr title="OrderBundle\Repository\ItemRepository::findByID">findByID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Repository/OrderRepository.php.html#10"><abbr title="OrderBundle\Repository\OrderRepository::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/CustomerCategoryService.php.html#16"><abbr title="OrderBundle\Service\CustomerCategoryService::addCategory">addCategory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/HeavyUserCategory.php.html#9"><abbr title="OrderBundle\Service\HeavyUserCategory::isEligible">isEligible</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Order.php.html#32"><abbr title="OrderBundle\Entity\Order::getOrderGUID">getOrderGUID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/HeavyUserCategory.php.html#18"><abbr title="OrderBundle\Service\HeavyUserCategory::getCategoryName">getCategoryName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/LightUserCategory.php.html#9"><abbr title="OrderBundle\Service\LightUserCategory::isEligible">isEligible</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/LightUserCategory.php.html#14"><abbr title="OrderBundle\Service\LightUserCategory::getCategoryName">getCategoryName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/MediumUserCategory.php.html#9"><abbr title="OrderBundle\Service\MediumUserCategory::isEligible">isEligible</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/MediumUserCategory.php.html#18"><abbr title="OrderBundle\Service\MediumUserCategory::getCategoryName">getCategoryName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/NewUserCategory.php.html#9"><abbr title="OrderBundle\Service\NewUserCategory::isEligible">isEligible</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Service/NewUserCategory.php.html#14"><abbr title="OrderBundle\Service\NewUserCategory::getCategoryName">getCategoryName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Restaurant.php.html#10"><abbr title="OrderBundle\Entity\Restaurant::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Item.php.html#35"><abbr title="OrderBundle\Entity\Item::isAvailable">isAvailable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Controller/OrderController.php.html#31"><abbr title="OrderBundle\Controller\OrderController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Customer.php.html#38"><abbr title="OrderBundle\Entity\Customer::getPhone">getPhone</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Controller/OrderController.php.html#56"><abbr title="OrderBundle\Controller\OrderController::sendOrderAction">sendOrderAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Controller/OrderController.php.html#108"><abbr title="OrderBundle\Controller\OrderController::isValid">isValid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/CreditCard.php.html#11"><abbr title="OrderBundle\Entity\CreditCard::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/CreditCard.php.html#17"><abbr title="OrderBundle\Entity\CreditCard::getNumber">getNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/CreditCard.php.html#22"><abbr title="OrderBundle\Entity\CreditCard::getValidity">getValidity</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Customer.php.html#28"><abbr title="OrderBundle\Entity\Customer::getID">getID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Customer.php.html#33"><abbr title="OrderBundle\Entity\Customer::getName">getName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Customer.php.html#48"><abbr title="OrderBundle\Entity\Customer::getTotalOrders">getTotalOrders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Item.php.html#30"><abbr title="OrderBundle\Entity\Item::getValue">getValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Customer.php.html#53"><abbr title="OrderBundle\Entity\Customer::setTotalOrders">setTotalOrders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Customer.php.html#58"><abbr title="OrderBundle\Entity\Customer::getTotalRatings">getTotalRatings</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Customer.php.html#63"><abbr title="OrderBundle\Entity\Customer::setTotalRatings">setTotalRatings</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Customer.php.html#68"><abbr title="OrderBundle\Entity\Customer::setTotalRecommendations">setTotalRecommendations</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Customer.php.html#73"><abbr title="OrderBundle\Entity\Customer::getTotalRecommendations">getTotalRecommendations</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Item.php.html#12"><abbr title="OrderBundle\Entity\Item::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Item.php.html#25"><abbr title="OrderBundle\Entity\Item::getName">getName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PaymentBundle/Repository/PaymentTransactionRepository.php.html#13"><abbr title="PaymentBundle\Repository\PaymentTransactionRepository::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="OrderBundle/Controller/OrderController.php.html#56"><abbr title="OrderBundle\Controller\OrderController::sendOrderAction">sendOrderAction</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="OrderBundle/Controller/OrderController.php.html#108"><abbr title="OrderBundle\Controller\OrderController::isValid">isValid</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="OrderBundle/Service/CustomerCategoryService.php.html#21"><abbr title="OrderBundle\Service\CustomerCategoryService::getUsageCategory">getUsageCategory</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="OrderBundle/Service/HeavyUserCategory.php.html#9"><abbr title="OrderBundle\Service\HeavyUserCategory::isEligible">isEligible</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="OrderBundle/Service/MediumUserCategory.php.html#9"><abbr title="OrderBundle\Service\MediumUserCategory::isEligible">isEligible</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="OrderBundle/Entity/Item.php.html#35"><abbr title="OrderBundle\Entity\Item::isAvailable">isAvailable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="OrderBundle/Service/LightUserCategory.php.html#9"><abbr title="OrderBundle\Service\LightUserCategory::isEligible">isEligible</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.1.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.2.24-0ubuntu0.18.04.6</a> with <a href="https://xdebug.org/">Xdebug 2.6.0</a> and <a href="https://phpunit.de/">PHPUnit 7.5.20</a> at Sun Aug 30 0:10:54 UTC 2020.</small>
+    </p>
+   </footer>
+  </div>
+  <script src=".js/jquery.min.js" type="text/javascript"></script>
+  <script src=".js/d3.min.js" type="text/javascript"></script>
+  <script src=".js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([15,0,0,0,1,0,0,0,0,1,0,16], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([39,0,0,0,0,0,0,0,0,0,0,28], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"FidelityProgramBundle\/Entity\/Points.php.html#7\">FidelityProgramBundle\\Entity\\Points<\/a>"],[0,1,"<a href=\"FidelityProgramBundle\/Repository\/PointsRepository.php.html#7\">FidelityProgramBundle\\Repository\\PointsRepository<\/a>"],[100,3,"<a href=\"FidelityProgramBundle\/Service\/FidelityProgramService.php.html#9\">FidelityProgramBundle\\Service\\FidelityProgramService<\/a>"],[100,5,"<a href=\"FidelityProgramBundle\/Service\/PointsCalculator.php.html#5\">FidelityProgramBundle\\Service\\PointsCalculator<\/a>"],[0,13,"<a href=\"OrderBundle\/Controller\/OrderController.php.html#25\">OrderBundle\\Controller\\OrderController<\/a>"],[0,3,"<a href=\"OrderBundle\/Entity\/CreditCard.php.html#5\">OrderBundle\\Entity\\CreditCard<\/a>"],[33.33333333333333,12,"<a href=\"OrderBundle\/Entity\/Customer.php.html#5\">OrderBundle\\Entity\\Customer<\/a>"],[0,5,"<a href=\"OrderBundle\/Entity\/Item.php.html#5\">OrderBundle\\Entity\\Item<\/a>"],[85.71428571428571,3,"<a href=\"OrderBundle\/Entity\/Order.php.html#7\">OrderBundle\\Entity\\Order<\/a>"],[0,3,"<a href=\"OrderBundle\/Entity\/Restaurant.php.html#5\">OrderBundle\\Entity\\Restaurant<\/a>"],[100,0,"<a href=\"OrderBundle\/Exception\/BadWordsFoundException.php.html#5\">OrderBundle\\Exception\\BadWordsFoundException<\/a>"],[100,0,"<a href=\"OrderBundle\/Exception\/CustomerNotAllowedException.php.html#5\">OrderBundle\\Exception\\CustomerNotAllowedException<\/a>"],[100,0,"<a href=\"OrderBundle\/Exception\/ItemNotAvailableException.php.html#5\">OrderBundle\\Exception\\ItemNotAvailableException<\/a>"],[0,1,"<a href=\"OrderBundle\/Repository\/BadWordsRepository.php.html#8\">OrderBundle\\Repository\\BadWordsRepository<\/a>"],[0,1,"<a href=\"OrderBundle\/Repository\/CustomerRepository.php.html#9\">OrderBundle\\Repository\\CustomerRepository<\/a>"],[0,1,"<a href=\"OrderBundle\/Repository\/ItemRepository.php.html#8\">OrderBundle\\Repository\\ItemRepository<\/a>"],[0,1,"<a href=\"OrderBundle\/Repository\/OrderRepository.php.html#8\">OrderBundle\\Repository\\OrderRepository<\/a>"],[100,4,"<a href=\"OrderBundle\/Service\/BadWordsValidator.php.html#7\">OrderBundle\\Service\\BadWordsValidator<\/a>"],[0,4,"<a href=\"OrderBundle\/Service\/CustomerCategoryService.php.html#7\">OrderBundle\\Service\\CustomerCategoryService<\/a>"],[0,4,"<a href=\"OrderBundle\/Service\/HeavyUserCategory.php.html#7\">OrderBundle\\Service\\HeavyUserCategory<\/a>"],[0,3,"<a href=\"OrderBundle\/Service\/LightUserCategory.php.html#7\">OrderBundle\\Service\\LightUserCategory<\/a>"],[0,4,"<a href=\"OrderBundle\/Service\/MediumUserCategory.php.html#7\">OrderBundle\\Service\\MediumUserCategory<\/a>"],[0,2,"<a href=\"OrderBundle\/Service\/NewUserCategory.php.html#7\">OrderBundle\\Service\\NewUserCategory<\/a>"],[100,7,"<a href=\"OrderBundle\/Service\/OrderService.php.html#16\">OrderBundle\\Service\\OrderService<\/a>"],[100,2,"<a href=\"OrderBundle\/Validators\/CreditCardExpirationValidator.php.html#5\">OrderBundle\\Validators\\CreditCardExpirationValidator<\/a>"],[100,3,"<a href=\"OrderBundle\/Validators\/CreditCardNumberValidator.php.html#5\">OrderBundle\\Validators\\CreditCardNumberValidator<\/a>"],[100,2,"<a href=\"OrderBundle\/Validators\/NotEmptyValidator.php.html#5\">OrderBundle\\Validators\\NotEmptyValidator<\/a>"],[100,2,"<a href=\"OrderBundle\/Validators\/NumericValidator.php.html#5\">OrderBundle\\Validators\\NumericValidator<\/a>"],[100,1,"<a href=\"PaymentBundle\/Entity\/PaymentTransaction.php.html#8\">PaymentBundle\\Entity\\PaymentTransaction<\/a>"],[100,0,"<a href=\"PaymentBundle\/Exception\/PaymentErrorException.php.html#5\">PaymentBundle\\Exception\\PaymentErrorException<\/a>"],[0,1,"<a href=\"PaymentBundle\/Repository\/PaymentTransactionRepository.php.html#11\">PaymentBundle\\Repository\\PaymentTransactionRepository<\/a>"],[100,4,"<a href=\"PaymentBundle\/Service\/Gateway.php.html#8\">PaymentBundle\\Service\\Gateway<\/a>"],[100,5,"<a href=\"PaymentBundle\/Service\/PaymentService.php.html#13\">PaymentBundle\\Service\\PaymentService<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"FidelityProgramBundle\/Entity\/Points.php.html#13\">FidelityProgramBundle\\Entity\\Points::__construct<\/a>"],[0,1,"<a href=\"FidelityProgramBundle\/Repository\/PointsRepository.php.html#9\">FidelityProgramBundle\\Repository\\PointsRepository::save<\/a>"],[100,1,"<a href=\"FidelityProgramBundle\/Service\/FidelityProgramService.php.html#14\">FidelityProgramBundle\\Service\\FidelityProgramService::__construct<\/a>"],[100,2,"<a href=\"FidelityProgramBundle\/Service\/FidelityProgramService.php.html#24\">FidelityProgramBundle\\Service\\FidelityProgramService::addPoints<\/a>"],[100,4,"<a href=\"FidelityProgramBundle\/Service\/PointsCalculator.php.html#7\">FidelityProgramBundle\\Service\\PointsCalculator::calculatePointsToReceive<\/a>"],[100,1,"<a href=\"FidelityProgramBundle\/Service\/PointsCalculator.php.html#24\">FidelityProgramBundle\\Service\\PointsCalculator::calculate<\/a>"],[0,1,"<a href=\"OrderBundle\/Controller\/OrderController.php.html#31\">OrderBundle\\Controller\\OrderController::__construct<\/a>"],[0,9,"<a href=\"OrderBundle\/Controller\/OrderController.php.html#56\">OrderBundle\\Controller\\OrderController::sendOrderAction<\/a>"],[0,3,"<a href=\"OrderBundle\/Controller\/OrderController.php.html#108\">OrderBundle\\Controller\\OrderController::isValid<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/CreditCard.php.html#11\">OrderBundle\\Entity\\CreditCard::__construct<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/CreditCard.php.html#17\">OrderBundle\\Entity\\CreditCard::getNumber<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/CreditCard.php.html#22\">OrderBundle\\Entity\\CreditCard::getValidity<\/a>"],[100,1,"<a href=\"OrderBundle\/Entity\/Customer.php.html#16\">OrderBundle\\Entity\\Customer::__construct<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Customer.php.html#28\">OrderBundle\\Entity\\Customer::getID<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Customer.php.html#33\">OrderBundle\\Entity\\Customer::getName<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Customer.php.html#38\">OrderBundle\\Entity\\Customer::getPhone<\/a>"],[100,2,"<a href=\"OrderBundle\/Entity\/Customer.php.html#43\">OrderBundle\\Entity\\Customer::isAllowedToOrder<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Customer.php.html#48\">OrderBundle\\Entity\\Customer::getTotalOrders<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Customer.php.html#53\">OrderBundle\\Entity\\Customer::setTotalOrders<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Customer.php.html#58\">OrderBundle\\Entity\\Customer::getTotalRatings<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Customer.php.html#63\">OrderBundle\\Entity\\Customer::setTotalRatings<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Customer.php.html#68\">OrderBundle\\Entity\\Customer::setTotalRecommendations<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Customer.php.html#73\">OrderBundle\\Entity\\Customer::getTotalRecommendations<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Item.php.html#12\">OrderBundle\\Entity\\Item::__construct<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Item.php.html#25\">OrderBundle\\Entity\\Item::getName<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Item.php.html#30\">OrderBundle\\Entity\\Item::getValue<\/a>"],[0,2,"<a href=\"OrderBundle\/Entity\/Item.php.html#35\">OrderBundle\\Entity\\Item::isAvailable<\/a>"],[100,1,"<a href=\"OrderBundle\/Entity\/Order.php.html#19\">OrderBundle\\Entity\\Order::__construct<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Order.php.html#32\">OrderBundle\\Entity\\Order::getOrderGUID<\/a>"],[100,1,"<a href=\"OrderBundle\/Entity\/Order.php.html#37\">OrderBundle\\Entity\\Order::getPaymentTransaction<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Restaurant.php.html#10\">OrderBundle\\Entity\\Restaurant::__construct<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Restaurant.php.html#16\">OrderBundle\\Entity\\Restaurant::getName<\/a>"],[0,1,"<a href=\"OrderBundle\/Entity\/Restaurant.php.html#21\">OrderBundle\\Entity\\Restaurant::isOpen<\/a>"],[0,1,"<a href=\"OrderBundle\/Repository\/BadWordsRepository.php.html#10\">OrderBundle\\Repository\\BadWordsRepository::findAllAsArray<\/a>"],[0,1,"<a href=\"OrderBundle\/Repository\/CustomerRepository.php.html#15\">OrderBundle\\Repository\\CustomerRepository::findByID<\/a>"],[0,1,"<a href=\"OrderBundle\/Repository\/ItemRepository.php.html#14\">OrderBundle\\Repository\\ItemRepository::findByID<\/a>"],[0,1,"<a href=\"OrderBundle\/Repository\/OrderRepository.php.html#10\">OrderBundle\\Repository\\OrderRepository::save<\/a>"],[100,1,"<a href=\"OrderBundle\/Service\/BadWordsValidator.php.html#11\">OrderBundle\\Service\\BadWordsValidator::__construct<\/a>"],[100,3,"<a href=\"OrderBundle\/Service\/BadWordsValidator.php.html#16\">OrderBundle\\Service\\BadWordsValidator::hasBadWords<\/a>"],[0,1,"<a href=\"OrderBundle\/Service\/CustomerCategoryService.php.html#16\">OrderBundle\\Service\\CustomerCategoryService::addCategory<\/a>"],[0,3,"<a href=\"OrderBundle\/Service\/CustomerCategoryService.php.html#21\">OrderBundle\\Service\\CustomerCategoryService::getUsageCategory<\/a>"],[0,3,"<a href=\"OrderBundle\/Service\/HeavyUserCategory.php.html#9\">OrderBundle\\Service\\HeavyUserCategory::isEligible<\/a>"],[0,1,"<a href=\"OrderBundle\/Service\/HeavyUserCategory.php.html#18\">OrderBundle\\Service\\HeavyUserCategory::getCategoryName<\/a>"],[0,2,"<a href=\"OrderBundle\/Service\/LightUserCategory.php.html#9\">OrderBundle\\Service\\LightUserCategory::isEligible<\/a>"],[0,1,"<a href=\"OrderBundle\/Service\/LightUserCategory.php.html#14\">OrderBundle\\Service\\LightUserCategory::getCategoryName<\/a>"],[0,3,"<a href=\"OrderBundle\/Service\/MediumUserCategory.php.html#9\">OrderBundle\\Service\\MediumUserCategory::isEligible<\/a>"],[0,1,"<a href=\"OrderBundle\/Service\/MediumUserCategory.php.html#18\">OrderBundle\\Service\\MediumUserCategory::getCategoryName<\/a>"],[0,1,"<a href=\"OrderBundle\/Service\/NewUserCategory.php.html#9\">OrderBundle\\Service\\NewUserCategory::isEligible<\/a>"],[0,1,"<a href=\"OrderBundle\/Service\/NewUserCategory.php.html#14\">OrderBundle\\Service\\NewUserCategory::getCategoryName<\/a>"],[100,1,"<a href=\"OrderBundle\/Service\/OrderService.php.html#23\">OrderBundle\\Service\\OrderService::__construct<\/a>"],[100,1,"<a href=\"OrderBundle\/Service\/OrderService.php.html#36\">OrderBundle\\Service\\OrderService::process<\/a>"],[100,4,"<a href=\"OrderBundle\/Service\/OrderService.php.html#45\">OrderBundle\\Service\\OrderService::validateConditions<\/a>"],[100,1,"<a href=\"OrderBundle\/Service\/OrderService.php.html#60\">OrderBundle\\Service\\OrderService::createOrder<\/a>"],[100,1,"<a href=\"OrderBundle\/Validators\/CreditCardExpirationValidator.php.html#9\">OrderBundle\\Validators\\CreditCardExpirationValidator::__construct<\/a>"],[100,1,"<a href=\"OrderBundle\/Validators\/CreditCardExpirationValidator.php.html#14\">OrderBundle\\Validators\\CreditCardExpirationValidator::isValid<\/a>"],[100,1,"<a href=\"OrderBundle\/Validators\/CreditCardNumberValidator.php.html#9\">OrderBundle\\Validators\\CreditCardNumberValidator::__construct<\/a>"],[100,2,"<a href=\"OrderBundle\/Validators\/CreditCardNumberValidator.php.html#14\">OrderBundle\\Validators\\CreditCardNumberValidator::isValid<\/a>"],[100,1,"<a href=\"OrderBundle\/Validators\/NotEmptyValidator.php.html#9\">OrderBundle\\Validators\\NotEmptyValidator::__construct<\/a>"],[100,1,"<a href=\"OrderBundle\/Validators\/NotEmptyValidator.php.html#14\">OrderBundle\\Validators\\NotEmptyValidator::isValid<\/a>"],[100,1,"<a href=\"OrderBundle\/Validators\/NumericValidator.php.html#9\">OrderBundle\\Validators\\NumericValidator::__construct<\/a>"],[100,1,"<a href=\"OrderBundle\/Validators\/NumericValidator.php.html#14\">OrderBundle\\Validators\\NumericValidator::isValid<\/a>"],[100,1,"<a href=\"PaymentBundle\/Entity\/PaymentTransaction.php.html#14\">PaymentBundle\\Entity\\PaymentTransaction::__construct<\/a>"],[0,1,"<a href=\"PaymentBundle\/Repository\/PaymentTransactionRepository.php.html#13\">PaymentBundle\\Repository\\PaymentTransactionRepository::save<\/a>"],[100,1,"<a href=\"PaymentBundle\/Service\/Gateway.php.html#17\">PaymentBundle\\Service\\Gateway::__construct<\/a>"],[100,3,"<a href=\"PaymentBundle\/Service\/Gateway.php.html#30\">PaymentBundle\\Service\\Gateway::pay<\/a>"],[100,1,"<a href=\"PaymentBundle\/Service\/PaymentService.php.html#18\">PaymentBundle\\Service\\PaymentService::__construct<\/a>"],[100,4,"<a href=\"PaymentBundle\/Service\/PaymentService.php.html#27\">PaymentBundle\\Service\\PaymentService::pay<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
