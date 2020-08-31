@@ -14,9 +14,20 @@ class CustomerCategoryService
     public function getUsageCategory(Customer $customer)
     {
         if(
+            $customer->getTotalOrders() >= 50 &&
+            $customer->getTotalRatings() >= 10 &&
+            $customer->getTotalRecommendations() >= 1
+        ) { return self::CATEGORY_HEAVY_USER; }
+
+        if(
+           $customer->getTotalOrders() >= 20 &&
+           $customer->getTotalRatings() >= 5 &&
+           $customer->getTotalRecommendations() >= 1
+        ) { return self::CATEGORY_MEDIUM_USER; }
+
+        if(
             $customer->getTotalOrders() >= 5 &&
-            $customer->getTotalRatings() >= 1 &&
-            $customer->getTotalRecommendations() >= 0
+            $customer->getTotalRatings() >= 1
         ) { return self::CATEGORY_LIGHT_USER; }
 
         return self::CATEGORY_NEW_USER;

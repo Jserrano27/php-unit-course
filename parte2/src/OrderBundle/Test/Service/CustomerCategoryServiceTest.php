@@ -45,4 +45,38 @@ class CustomerCategoryServiceTest extends TestCase
 
         $this->assertEquals(CustomerCategoryService::CATEGORY_LIGHT_USER, $usageCategory);
     }
+
+    /**
+     * @test
+     */
+    public function customerShouldBeMediumUser()
+    {
+        $customerCategoryService = new CustomerCategoryService();
+
+        $customer = new Customer();
+        $customer->setTotalOrders(20);
+        $customer->setTotalRatings(5);
+        $customer->setTotalRecommendations(1);
+
+        $usageCategory = $customerCategoryService->getUsageCategory($customer);
+
+        $this->assertEquals(CustomerCategoryService::CATEGORY_MEDIUM_USER, $usageCategory);
+    }
+
+    /**
+     * @test
+     */
+    public function customerShouldBeHeavyUser()
+    {
+        $customerCategoryService = new CustomerCategoryService();
+
+        $customer = new Customer();
+        $customer->setTotalOrders(50);
+        $customer->setTotalRatings(10);
+        $customer->setTotalRecommendations(5);
+
+        $usageCategory = $customerCategoryService->getUsageCategory($customer);
+
+        $this->assertEquals(CustomerCategoryService::CATEGORY_HEAVY_USER, $usageCategory);
+    }
 }
