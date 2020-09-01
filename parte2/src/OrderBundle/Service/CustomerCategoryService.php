@@ -11,25 +11,19 @@ class CustomerCategoryService
     const CATEGORY_MEDIUM_USER = 'medium-user';
     const CATEGORY_HEAVY_USER = 'heavy-user';
 
+    private $categories;
+
+    public function addCategory(CustomerCategoryInterface $category)
+    {
+        $this->categories[] = $category;
+    }
+
     public function getUsageCategory(Customer $customer)
     {
-        if(
-            $customer->getTotalOrders() >= 50 &&
-            $customer->getTotalRatings() >= 10 &&
-            $customer->getTotalRecommendations() >= 1
-        ) { return self::CATEGORY_HEAVY_USER; }
-
-        if(
-           $customer->getTotalOrders() >= 20 &&
-           $customer->getTotalRatings() >= 5 &&
-           $customer->getTotalRecommendations() >= 1
-        ) { return self::CATEGORY_MEDIUM_USER; }
-
-        if(
-            $customer->getTotalOrders() >= 5 &&
-            $customer->getTotalRatings() >= 1
-        ) { return self::CATEGORY_LIGHT_USER; }
-
-        return self::CATEGORY_NEW_USER;
+        foreach($this->categories as $category){
+            if($category->isEligible($customer)){
+                return $category->getCategoryName();
+            }
+        }
     }
 }
